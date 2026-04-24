@@ -1,1 +1,265 @@
-
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Prof. Mike Wasserman, Ph.D. — Münster School of Business</title>
+  <meta name="description" content="Academic homepage of Prof. Mike Wasserman, Ph.D. — Münster School of Business, FH Münster. Teaching, research, academic programs (IB&amp;M &amp; DigiBIM), and master thesis supervision.">
+  <meta property="og:title" content="Prof. Mike Wasserman, Ph.D.">
+  <meta property="og:description" content="Münster School of Business, FH Münster. Teaching, research, and master thesis supervision.">
+  <meta property="og:type" content="profile">
+  <style>
+    :root{--ink:#0f172a;--ink-soft:#334155;--muted:#64748b;--faint:#94a3b8;--rule:#e2e8f0;--surface:#ffffff;--bg:#fafbfc;--bg-elev:#ffffff;--accent:#2563eb;--accent-ink:#1d4ed8;--accent-soft:#eff6ff;--shadow-sm:0 1px 2px rgba(15,23,42,0.04);--shadow-md:0 4px 16px -6px rgba(15,23,42,0.12);--shadow-lg:0 16px 40px -12px rgba(15,23,42,0.18);--radius-sm:8px;--radius-md:12px;--radius-lg:16px;--maxw:1040px;--sans:"Inter var",Inter,-apple-system,BlinkMacSystemFont,sans-serif;}
+    @media(prefers-color-scheme:dark){:root{--ink:#e2e8f0;--ink-soft:#cbd5e1;--muted:#94a3b8;--faint:#64748b;--rule:#1e293b;--surface:#0f172a;--bg:#0b1120;--bg-elev:#111827;--accent:#60a5fa;--accent-ink:#93c5fd;--accent-soft:rgba(96,165,250,0.10);--shadow-sm:0 1px 2px rgba(0,0,0,0.35);--shadow-md:0 6px 18px -6px rgba(0,0,0,0.55);--shadow-lg:0 18px 44px -12px rgba(0,0,0,0.6);}}
+    *,*::before,*::after{box-sizing:border-box;}
+    html{scroll-behavior:smooth;}
+    body{margin:0;font-family:var(--sans);font-size:16.5px;line-height:1.65;color:var(--ink);background:var(--bg);-webkit-font-smoothing:antialiased;}
+    img{max-width:100%;display:block;}
+    a{color:var(--accent);text-decoration:none;border-bottom:1px solid transparent;transition:color .15s ease,border-color .15s ease;}
+    a:hover{color:var(--accent-ink);border-bottom-color:currentColor;}
+    h1,h2,h3,h4{font-family:var(--sans);color:var(--ink);letter-spacing:-0.02em;line-height:1.2;margin:0 0 0.4em;font-weight:700;}
+    h1{font-size:clamp(2.1rem,5vw,3.2rem);letter-spacing:-0.03em;}
+    h2{font-size:clamp(1.55rem,2.6vw,2rem);margin-top:0;}
+    h3{font-size:1.1rem;font-weight:600;line-height:1.35;}
+    p{margin:0 0 1em;}ul,ol{margin:0 0 1em;padding-left:1.15em;}li{margin:0.3em 0;}
+    header.site{position:sticky;top:0;z-index:10;background:rgba(250,251,252,0.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--rule);}
+    .nav{max-width:var(--maxw);margin:0 auto;padding:14px 28px;display:flex;flex-wrap:wrap;align-items:center;gap:10px 24px;justify-content:space-between;}
+    .nav .brand{font-size:0.98rem;font-weight:700;color:var(--ink);border:none;}
+    .nav .brand .dot{display:inline-block;width:8px;height:8px;border-radius:50%;background:var(--accent);margin-right:8px;vertical-align:2px;}
+    .nav ul{list-style:none;margin:0;padding:0;display:flex;flex-wrap:wrap;gap:4px 22px;}
+    .nav a.nav-link{color:var(--ink-soft);font-size:0.92rem;font-weight:500;border:none;}
+    .nav a.nav-link:hover{color:var(--accent);}
+    main{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
+    section{padding:84px 0 24px;scroll-margin-top:72px;}
+    section+section{border-top:1px solid var(--rule);}
+    .eyebrow{display:inline-block;font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
+    .hero{padding:96px 0 48px;border-top:none;}
+    .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:56px;align-items:center;}
+    @media(max-width:820px){.hero-grid{grid-template-columns:1fr;gap:32px;}.hero{padding-top:56px;}}
+    .hero .affiliation{color:var(--ink-soft);font-size:1.05rem;font-weight:500;margin:0 0 6px;}
+    .hero .roles{color:var(--muted);font-size:0.98rem;line-height:1.55;margin:0;max-width:54ch;}
+    .hero .tagline{margin-top:28px;font-size:1.15rem;color:var(--ink-soft);line-height:1.55;max-width:54ch;}
+    .hero-cta{margin-top:32px;display:flex;flex-wrap:wrap;gap:10px 12px;}
+    .btn{display:inline-flex;align-items:center;gap:8px;padding:10px 16px;font-size:0.92rem;font-weight:600;border-radius:999px;border:1px solid var(--rule);background:var(--bg-elev);color:var(--ink);text-decoration:none;box-shadow:var(--shadow-sm);transition:transform .15s ease,box-shadow .15s ease;}
+    .btn:hover{transform:translateY(-1px);box-shadow:var(--shadow-md);border-color:var(--accent);color:var(--accent);}
+    .btn.primary{background:var(--accent);color:white;border-color:var(--accent);}
+    .btn.primary:hover{background:var(--accent-ink);color:white;}
+    .portrait{position:relative;width:100%;max-width:280px;aspect-ratio:1/1;border-radius:var(--radius-lg);overflow:hidden;background:linear-gradient(135deg,var(--accent-soft) 0%,var(--bg-elev) 100%);box-shadow:var(--shadow-lg);justify-self:end;}
+    .portrait img{width:100%;height:100%;object-fit:cover;}
+    .portrait .fallback{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;padding:18px;text-align:center;color:var(--muted);font-size:0.82rem;}
+    .card-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:18px;margin:20px 0 8px;}
+    .card{background:var(--bg-elev);border:1px solid var(--rule);border-radius:var(--radius-md);padding:22px 24px;box-shadow:var(--shadow-sm);transition:transform .15s ease,box-shadow .15s ease;}
+    .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-md);}
+    .card h3{margin-bottom:6px;}.card .meta{font-size:0.85rem;color:var(--muted);margin-bottom:12px;}.card p:last-child{margin-bottom:0;}
+    .sub-head{margin-top:28px;font-size:0.78rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--muted);}
+    .pub-list{list-style:none;padding:0;margin:22px 0 0;}
+    .pub-list li{padding:18px 0;border-bottom:1px solid var(--rule);font-size:0.97rem;display:grid;grid-template-columns:96px 1fr;gap:4px 18px;align-items:baseline;}
+    @media(max-width:620px){.pub-list li{grid-template-columns:1fr;gap:6px;}}
+    .pub-type{display:inline-flex;align-items:center;justify-content:center;font-size:0.68rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:var(--accent);background:var(--accent-soft);border-radius:999px;padding:4px 10px;width:fit-content;white-space:nowrap;}
+    .pub-year{color:var(--muted);}
+    .callout{border-left:3px solid var(--accent);background:var(--accent-soft);border-radius:0 var(--radius-sm) var(--radius-sm) 0;padding:16px 20px;margin:20px 0;font-size:0.96rem;color:var(--ink-soft);}
+    .callout strong{color:var(--ink);}
+    .contact-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:18px;margin-top:22px;}
+    .contact-card{background:var(--bg-elev);border:1px solid var(--rule);border-radius:var(--radius-md);padding:18px 20px;box-shadow:var(--shadow-sm);}
+    .contact-card h3{font-size:0.72rem;text-transform:uppercase;letter-spacing:0.14em;color:var(--muted);font-weight:600;margin-bottom:6px;}
+    .contact-card p{margin:0;font-size:0.95rem;}
+    footer.site{margin-top:72px;border-top:1px solid var(--rule);padding:28px 28px 56px;color:var(--muted);font-size:0.85rem;text-align:center;}
+    footer.site a{color:var(--ink-soft);}
+    .ph{background:rgba(251,191,36,0.28);border-bottom:1px dashed #b45309;padding:0 3px;border-radius:2px;}
+  </style>
+</head>
+<body>
+  <header class="site">
+    <nav class="nav" aria-label="Primary">
+      <a class="brand" href="#top"><span class="dot"></span>Mike Wasserman</a>
+      <ul>
+        <li><a class="nav-link" href="#about">About</a></li>
+        <li><a class="nav-link" href="#teaching">Teaching</a></li>
+        <li><a class="nav-link" href="#research">Research</a></li>
+        <li><a class="nav-link" href="#programs">Programs</a></li>
+        <li><a class="nav-link" href="#thesis">Thesis</a></li>
+        <li><a class="nav-link" href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main id="top">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-grid">
+        <div>
+          <div class="eyebrow">Faculty · Münster School of Business</div>
+          <h1 id="hero-title">Prof. Mike Wasserman, Ph.D.</h1>
+          <p class="affiliation">Münster School of Business — FH Münster</p>
+          <p class="roles">Professor of International Management · Program Director, IB&amp;M · Co-Program Director, DigiBIM</p>
+          <p class="tagline">Teaching, research, and thesis supervision at the intersection of international business, digital transformation, and innovation management.</p>
+          <div class="hero-cta">
+            <a class="btn primary" href="#teaching">Courses →</a>
+            <a class="btn" href="#research">Research &amp; publications</a>
+            <a class="btn" href="#thesis">Supervising theses</a>
+          </div>
+        </div>
+        <figure class="portrait" aria-label="Portrait of Prof. Mike Wasserman">
+          <span class="fallback">Add your photo as assets/mike.jpg</span>
+          <img src="assets/mike.jpg" alt="Portrait of Prof. Mike Wasserman" onerror="this.style.display='none'">
+        </figure>
+      </div>
+    </section>
+    <section id="about" aria-labelledby="about-title">
+      <div class="eyebrow">About</div>
+      <h2 id="about-title">About me</h2>
+      <p>I’m a professor at the Münster School of Business (FH Münster), where I teach, conduct research, and supervise students in the Bachelor in International Business and Management (IB&amp;M) and the Master in Digital Business and Innovation Management (DigiBIM).</p>
+      <p>My work focuses on <span class="ph">[2–3 research interests]</span>. Before joining FH Münster I <span class="ph">[prior roles / institutions]</span>, and I hold a Ph.D. from <span class="ph">[institution]</span>.</p>
+      <p>On this site you’ll find an overview of the courses I teach, the research projects I’m currently working on, information about the programs I manage, and guidance for students who’d like to write their master thesis with me.</p>
+    </section>
+    <section id="teaching" aria-labelledby="teaching-title">
+      <div class="eyebrow">Teaching</div>
+      <h2 id="teaching-title">Courses</h2>
+      <p>Below are the courses I’m currently teaching. Enrolled students should check ILIAS/Moodle for week-by-week materials.</p>
+      <div class="sub-head">Winter semester</div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Innovation of New Products, Services, and Processes</h3>
+          <div class="meta">DigiBIM · Winter · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Syllabus (PDF)</span></a> · <a href="#"><span class="ph">Reading list</span></a></p>
+        </article>
+        <article class="card">
+          <h3>Integrative Project 1</h3>
+          <div class="meta">DigiBIM · Winter · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Project brief (PDF)</span></a></p>
+        </article>
+      </div>
+      <div class="sub-head">Summer semester</div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Intercultural Management</h3>
+          <div class="meta">IMS · Summer · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Syllabus (PDF)</span></a></p>
+        </article>
+        <article class="card">
+          <h3>Strategic Management + Social Business</h3>
+          <div class="meta">IB&amp;M · Summer · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Syllabus (PDF)</span></a></p>
+        </article>
+      </div>
+      <div class="sub-head">Both semesters</div>
+      <div class="card-grid">
+        <article class="card">
+          <h3>International Management</h3>
+          <div class="meta">IB&amp;M / BWL · Winter &amp; Summer · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Syllabus (PDF)</span></a></p>
+        </article>
+        <article class="card">
+          <h3>International New Ventures</h3>
+          <div class="meta">IB&amp;M / BWL · Winter &amp; Summer · <span class="ph">[ECTS]</span></div>
+          <p><span class="ph">[Course description]</span></p>
+          <p><a href="#"><span class="ph">Syllabus (PDF)</span></a></p>
+        </article>
+      </div>
+      <div class="callout"><strong>Prospective students:</strong> the syllabus PDFs give a realistic preview of readings, assessment structure, and weekly topics.</div>
+    </section>
+    <section id="research" aria-labelledby="research-title">
+      <div class="eyebrow">Research</div>
+      <h2 id="research-title">Research &amp; publications</h2>
+      <p>My research sits at the intersection of <span class="ph">[primary field]</span> and <span class="ph">[secondary field]</span>, with a particular interest in <span class="ph">[specific phenomenon]</span>.</p>
+      <div class="sub-head">Current projects</div>
+      <div class="card-grid">
+        <article class="card"><h3><span class="ph">[Project 1 title]</span></h3><div class="meta"><span class="ph">[Funder]</span> · <span class="ph">[2024–2026]</span></div><p><span class="ph">[Description]</span></p></article>
+        <article class="card"><h3><span class="ph">[Project 2 title]</span></h3><div class="meta"><span class="ph">[Funder]</span> · <span class="ph">[Timeframe]</span></div><p><span class="ph">[Description]</span></p></article>
+      </div>
+      <div class="sub-head">Selected publications</div>
+      <p style="font-size:0.9rem;color:var(--muted);margin-top:4px;">Full list on <a href="https://scholar.google.com/citations?user=rBzbALIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a> · <a href="#"><span class="ph">ORCID</span></a> · <a href="#"><span class="ph">ResearchGate</span></a>.</p>
+      <ul class="pub-list">
+        <li><span class="pub-type">Chapter</span><div>Fisher, S. L., Longoni, A., Luzzini, D., Pagell, M., <strong>Wasserman, M.</strong>, &amp; Wiengarten, F. <span class="pub-year">(2024).</span> <em>A just transition towards making precarious work rare, safe, and legal.</em> In S. Gold &amp; A. Wieland (Eds.), <i>The Supply Chain: A System in Crisis</i> (pp. 111–125). Edward Elgar.</div></li>
+        <li><span class="pub-type">Journal</span><div>Nakabuye, Z., Bimbona, S., Mayanja, J., &amp; <strong>Wasserman, M.</strong> <span class="pub-year">(2024).</span> <em>Knowledge absorptive capacity: The secret sauce that helps entrepreneurs in Uganda convert technology orientation into export performance.</em> <i>African Journal of Business &amp; Economic Research</i>, 19(3).</div></li>
+        <li><span class="pub-type">Conference</span><div>Wormeck, L., Crome, C., Meyer-Hollatz, T., Hinsen, S., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2024).</span> <em>Evaluating digital sustainability-oriented innovations: Criteria for the frontend of innovation.</em> <i>ECIS 2024 Proceedings</i>, 13. <a href="https://aisel.aisnet.org/ecis2024/track02_general/track02_general/13" target="_blank" rel="noopener">Link</a></div></li>
+        <li><span class="pub-type">Chapter</span><div><strong>Wasserman, M.</strong>, &amp; Fisher, S. <span class="pub-year">(2020).</span> <em>Sailing in stormy weather: Digitalization, ethics and e-HRM.</em> In T. Bondarouk &amp; S. Fisher (Eds.), <i>Encyclopedia of Electronic HRM</i> (pp. 156–162).</div></li>
+        <li><span class="pub-type">Conference</span><div>Feldmann, C., Delke, V., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2019).</span> <em>Strategically aligning additive manufacturing supply chains for sustainability and effectiveness.</em> <i>IFAC-PapersOnLine</i>, 52(10), 260–264.</div></li>
+        <li><span class="pub-type">Practitioner</span><div><strong>Wasserman, M.</strong>, &amp; Mahmoodi, F. <span class="pub-year">(2017).</span> <em>Disruptive technologies: Should you give them the green light?</em> <i>CSCMP’s Supply Chain Quarterly</i>, 24–29.</div></li>
+        <li><span class="pub-type">Journal</span><div>Beekman, A. V., Steiner, S., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2012).</span> <em>Where innovation does a world of good: Entrepreneurial orientation and innovative outcomes in nonprofit organizations.</em> <i>Journal of Strategic Innovation and Sustainability</i>, 8(2), 22–36.</div></li>
+        <li><span class="pub-type">Journal</span><div>Pagell, M., Wu, Z., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2010).</span> <em>Thinking differently about purchasing portfolios: An assessment of sustainable sourcing.</em> <i>Journal of Supply Chain Management</i>, 46(1), 57–73.</div></li>
+        <li><span class="pub-type">Journal</span><div>Orvis, K. A., Fisher, S. L., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2009).</span> <em>Power to the people: Using learner control to improve trainee reactions and learning in web-based instructional environments.</em> <i>Journal of Applied Psychology</i>, 94(4), 960.</div></li>
+        <li><span class="pub-type">Journal</span><div>Sill, H. E., Fisher, S. L., &amp; <strong>Wasserman, M. E.</strong> <span class="pub-year">(2008).</span> <em>Consumer reactions to potential intrusiveness and benefits of RFID.</em> <i>International Journal of Information Technology and Management</i>, 7(1), 76–97.</div></li>
+        <li><span class="pub-type">Journal</span><div>Fisher, S. L., <strong>Wasserman, M. E.</strong>, &amp; Palthe, J. <span class="pub-year">(2007).</span> <em>Management practices for on-site consultants: Lessons learned from the expatriate experience.</em> <i>Consulting Psychology Journal: Practice and Research</i>, 59(1), 17.</div></li>
+        <li><span class="pub-type">Chapter</span><div>Stimpert, J. L., <strong>Wasserman, M. E.</strong>, &amp; Jayaram, M. J. <span class="pub-year">(1998).</span> <em>Strategic trajectories and patterns of innovation.</em> In G. Hamel, C. K. Prahalad, H. Thomas, &amp; D. O’Neal (Eds.), <i>Strategic Flexibility</i>. <span style="color:var(--muted)">Russian edition: St. Petersburg: Piter, 2005.</span></div></li>
+      </ul>
+    </section>
+    <section id="programs" aria-labelledby="programs-title">
+      <div class="eyebrow">Academic programs</div>
+      <h2 id="programs-title">Programs I manage</h2>
+      <p>I’m responsible for two programs at the Münster School of Business. For official admissions information, always consult the FH Münster website.</p>
+      <div class="card-grid">
+        <article class="card">
+          <h3>Bachelor in International Business and Management (IB&amp;M)</h3>
+          <div class="meta">Bachelor’s degree · <span class="ph">[7 semesters incl. internship &amp; semester abroad]</span> · <span class="ph">[language]</span></div>
+          <p>An internationally oriented business program combining a broad management foundation — strategy, marketing, finance, operations — with cross-cultural competence, a mandatory semester abroad, and applied project work.</p>
+          <p><strong>Good fit for students who</strong> want an explicitly international career: consulting, international sales, logistics, global marketing, or a specialised master’s.</p>
+          <p><a href="#"><span class="ph">Official program page (FH Münster)</span></a> · <a href="#"><span class="ph">Curriculum overview</span></a> · <a href="#"><span class="ph">How to apply</span></a></p>
+        </article>
+        <article class="card">
+          <h3>Master in Digital Business and Innovation Management (DigiBIM)</h3>
+          <div class="meta">Master’s degree · <span class="ph">[4 semesters]</span> · <span class="ph">[language]</span></div>
+          <p>A master’s program for graduates who want to lead digital transformation and innovation. Core topics include digital business models, data-driven decision-making, innovation processes, and entrepreneurship.</p>
+          <p><strong>Good fit for students who</strong> have a business or adjacent bachelor’s and want a career in digital strategy, product, or innovation roles.</p>
+          <p><a href="#"><span class="ph">Official program page (FH Münster)</span></a> · <a href="#"><span class="ph">Curriculum overview</span></a> · <a href="#"><span class="ph">Admission requirements</span></a></p>
+        </article>
+      </div>
+      <div class="callout"><strong>Thinking about applying?</strong> I’m happy to answer questions about either program — use the email in the <a href="#contact">contact</a> section and mention which program you’re asking about.</div>
+    </section>
+    <section id="thesis" aria-labelledby="thesis-title">
+      <div class="eyebrow">Thesis supervision</div>
+      <h2 id="thesis-title">Writing your master thesis with me</h2>
+      <p>I supervise master theses primarily within DigiBIM, and occasionally in IB&amp;M for topics close to my research.</p>
+      <div class="sub-head">Topics I supervise</div>
+      <ul>
+        <li><span class="ph">[Topic cluster 1 — e.g. digital business model innovation]</span></li>
+        <li><span class="ph">[Topic cluster 2 — e.g. platform strategy / ecosystems]</span></li>
+        <li><span class="ph">[Topic cluster 3 — e.g. AI adoption in SMEs]</span></li>
+        <li><span class="ph">[Topic cluster 4 — e.g. international entrepreneurship]</span></li>
+      </ul>
+      <p>Purely descriptive “overview of X” theses are not a good fit. I expect a clear research question, a defensible method, and engagement with academic literature.</p>
+      <div class="sub-head">What I expect from you</div>
+      <ul>
+        <li>A one-page proposal: motivation, research question, preliminary method, rough timeline.</li>
+        <li>Regular progress — I’d rather see an imperfect draft early than a polished one late.</li>
+        <li>Honest communication when things are stuck. They will be. That’s normal.</li>
+      </ul>
+      <div class="sub-head">Process &amp; timeline</div>
+      <ol>
+        <li><strong>Initial email</strong> with a short pitch of your topic idea.</li>
+        <li><strong>Meeting</strong> — 30 min to sharpen the research question and method.</li>
+        <li><strong>Proposal</strong> — you send a one-pager; we agree on scope.</li>
+        <li><strong>Formal registration</strong> with the examination office.</li>
+        <li><strong>Milestones</strong> — typically 3–4 check-ins during the writing period.</li>
+        <li><strong>Submission</strong> and defense according to program regulations.</li>
+      </ol>
+      <div class="callout">
+        <strong>Email template — initial pitch.</strong><br>
+        Subject: <em>Thesis supervision — [your program] — [3-word topic hook]</em><br><br>
+        1. Who you are (program, expected graduation, relevant courses with me).<br>
+        2. Your topic idea in 4–6 sentences: the phenomenon, why it matters, what you’d like to find out.<br>
+        3. A first thought on method (e.g. case studies, survey, interviews, archival).<br>
+        4. Two or three preferred time slots for a 30-minute meeting.
+      </div>
+      <p style="font-size:0.92rem;color:var(--muted)">Capacity is limited — earlier inquiries have a better chance.</p>
+    </section>
+    <section id="contact" aria-labelledby="contact-title">
+      <div class="eyebrow">Contact</div>
+      <h2 id="contact-title">Get in touch</h2>
+      <div class="contact-grid">
+        <div class="contact-card"><h3>Email</h3><p><a href="mailto:wasserman@fh-muenster.de">wasserman@fh-muenster.de</a></p></div>
+        <div class="contact-card"><h3>Office</h3><p>Room C517, FHZ<br>Corrensstraße 25<br>48147 Münster, Germany<br><a href="https://www.google.com/maps/search/?api=1&amp;query=Corrensstra%C3%9Fe+25%2C+48147+M%C3%BCnster%2C+Germany" target="_blank" rel="noopener">View on map →</a></p></div>
+        <div class="contact-card"><h3>Office hours</h3><p>By appointment.<br><a href="https://calendly.com/mikewasserman/30min" target="_blank" rel="noopener">Book a 30-minute slot →</a></p></div>
+        <div class="contact-card"><h3>Elsewhere</h3><p><a href="https://www.linkedin.com/in/mwasserm/" target="_blank" rel="noopener">LinkedIn</a><br><a href="https://scholar.google.com/citations?user=rBzbALIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><br><a href="#"><span class="ph">ORCID</span></a></p></div>
+      </div>
+    </section>
+  </main>
+  <footer class="site">
+    <p>© <span id="year">2026</span> Mike Wasserman · Münster School of Business, FH Münster · <a href="#"><span class="ph">Imprint / Impressum</span></a> · <a href="#"><span class="ph">Privacy</span></a></p>
+  </footer>
+  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
