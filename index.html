@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
+<meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Prof. Mike Wasserman, Ph.D. — Münster School of Business</title>
   <meta name="description" content="Academic homepage of Prof. Mike Wasserman, Ph.D. — Münster School of Business, FH Münster. Teaching, research, academic programs (IB&amp;M &amp; DigiBIM), and master thesis supervision.">
@@ -31,7 +32,7 @@
     .nav a.nav-link:hover{color:var(--accent);}
     main{max-width:var(--maxw);margin:0 auto;padding:0 28px;}
     section{padding:84px 0 24px;scroll-margin-top:72px;}
-    section+section{border-top:1px solid var(--rule);}
+    section+section{border-top:none;}
     .eyebrow{display:inline-block;font-size:0.72rem;font-weight:600;letter-spacing:0.14em;text-transform:uppercase;color:var(--accent);margin-bottom:14px;}
     .hero{padding:96px 0 48px;border-top:none;}
     .hero-grid{display:grid;grid-template-columns:minmax(0,1fr) 280px;gap:56px;align-items:center;}
@@ -66,24 +67,34 @@
     footer.site{margin-top:72px;border-top:1px solid var(--rule);padding:28px 28px 56px;color:var(--muted);font-size:0.85rem;text-align:center;}
     footer.site a{color:var(--ink-soft);}
     .ph{background:rgba(251,191,36,0.28);border-bottom:1px dashed #b45309;padding:0 3px;border-radius:2px;}
+  
+    /* ── Page routing ── */
+    [data-page]{display:none;animation:fadeIn .18s ease;}
+    [data-page].active{display:block;}
+    @keyframes fadeIn{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+    .nav a.nav-link.active{color:var(--accent);font-weight:600;}
+    /* Home page shows hero + about stacked */
+    #page-home{display:none;}
+    #page-home.active{display:block;}
   </style>
 </head>
 <body>
   <header class="site">
     <nav class="nav" aria-label="Primary">
-      <a class="brand" href="#top"><span class="dot"></span>Mike Wasserman</a>
+      <a class="brand" href="#" data-target="home"><span class="dot"></span>Mike Wasserman</a>
       <ul>
-        <li><a class="nav-link" href="#about">About</a></li>
-        <li><a class="nav-link" href="#teaching">Teaching</a></li>
-        <li><a class="nav-link" href="#research">Research</a></li>
-        <li><a class="nav-link" href="#programs">Programs</a></li>
-        <li><a class="nav-link" href="#thesis">Thesis</a></li>
-        <li><a class="nav-link" href="#contact">Contact</a></li>
+        <li><a class="nav-link" href="#teaching" data-target="teaching">Teaching</a></li>
+        <li><a class="nav-link" href="#research" data-target="research">Research</a></li>
+        <li><a class="nav-link" href="#programs" data-target="programs">Programs</a></li>
+        <li><a class="nav-link" href="#thesis" data-target="thesis">Thesis</a></li>
+        <li><a class="nav-link" href="#contact" data-target="contact">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <main id="top">
-    <section class="hero" aria-labelledby="hero-title">
+
+  <main>
+    <div id="page-home" data-page>
+      <section class="hero" aria-labelledby="hero-title">
       <div class="hero-grid">
         <div>
           <div class="eyebrow">Faculty · Münster School of Business</div>
@@ -92,9 +103,9 @@
           <p class="roles">Professor of International Management</br>Program Director, IB&amp;M · Co-Program Director, DigiBIM</p>
           <p class="tagline">Teaching, research, and thesis supervision at the intersection of international business, innovative technology, and human decision-making.</p>
           <div class="hero-cta">
-            <a class="btn primary" href="#teaching">Courses →</a>
-            <a class="btn" href="#research">Research &amp; publications</a>
-            <a class="btn" href="#thesis">Supervising theses</a>
+            <a class="btn primary" href="#teaching" data-target="teaching">Courses →</a>
+            <a class="btn" href="#research" data-target="research">Research &amp; publications</a>
+            <a class="btn" href="#thesis" data-target="thesis">Supervising theses</a>
           </div>
         </div>
         <figure class="portrait" aria-label="About me">
@@ -102,14 +113,16 @@
         </figure>
       </div>
     </section>
-    <section id="about" aria-labelledby="about-title">
+      <section id="about" aria-labelledby="about-title">
       <div class="eyebrow">About</div>
       <h2 id="about-title">About me</h2>
       <p>I’m a professor at the Münster School of Business (FH Münster), where I teach, work with organizations, conduct research, and help manage the Bachelor in International Business and Management (IB&amp;M) and the Master in Digital Business and Innovation Management (DigiBIM) programs.</p>
       <p>My work focuses on disruptive technologies, sustainability in human elements of international supply chains, and knowledge management. Before joining FH Münster I was an associate professor at Clarkson University from 2002-2017, an assistant professor at George Mason University from 1997-2002, and a visiting guest lecturer at HTWG Konstanz from 2010-2017. I hold a Ph.D. in Management Strategy and Policy from Michigan State University.</p>
       <p>On this site you’ll find an overview of the courses I teach, the research projects I’m currently working on, information about the programs I manage, and guidance for students who’d like to write their thesis with me.</p>
     </section>
-    <section id="teaching" aria-labelledby="teaching-title">
+    </div>
+    <div id="page-teaching" data-page>
+      <section id="teaching" aria-labelledby="teaching-title">
       <div class="eyebrow">Teaching</div>
       <h2 id="teaching-title">Courses</h2>
       <p>Below are the courses I’m currently teaching. Enrolled students should check ILIAS/Moodle for week-by-week materials.</p>
@@ -147,7 +160,9 @@
         </article>
       </div>
     </section>
-    <section id="research" aria-labelledby="research-title">
+    </div>
+    <div id="page-research" data-page>
+      <section id="research" aria-labelledby="research-title">
       <div class="eyebrow">Research</div>
       <h2 id="research-title">Research &amp; publications</h2>
       <div class="sub-head">Selected publications</div>
@@ -171,7 +186,9 @@
         <li><span class="pub-type">Chapter</span><div>Stimpert, J. L., <strong>Wasserman, M. E.</strong>, &amp; Jayaram, M. J. <span class="pub-year">(1998).</span> <em>Strategic trajectories and patterns of innovation.</em> In G. Hamel, C. K. Prahalad, H. Thomas, &amp; D. O’Neal (Eds.), <i>Strategic Flexibility</i>. <span style="color:var(--muted)">Russian edition: St. Petersburg: Piter, 2005.</span></div></li>
       </ul>
     </section>
-    <section id="programs" aria-labelledby="programs-title">
+    </div>
+    <div id="page-programs" data-page>
+      <section id="programs" aria-labelledby="programs-title">
       <div class="eyebrow">Academic programs</div>
       <h2 id="programs-title">Programs I manage</h2>
       <p>I’m responsible for two programs at the Münster School of Business. For official admissions information, always consult the FH Münster website.</p>
@@ -189,9 +206,11 @@
           <p><a href="https://www.fh-muenster.de/en/msb/studium/ma-digibim"><span class="ph">Official program page (FH Münster)</span></a> · <a href="https://www.fh-muenster.de/en/studiengaenge/digital-business-and-innovation-management-master"><span class="ph">Admission requirements</span></a></p>
         </article>
       </div>
-      <div class="callout"><strong>Thinking about applying?</strong> I’m happy to answer questions about either program — use the email in the <a href="#contact">contact</a> section and mention which program you’re asking about.</div>
+      <div class="callout"><strong>Thinking about applying?</strong> I’m happy to answer questions about either program — use the email in the <a href="#contact" data-target="contact">contact</a> section and mention which program you’re asking about.</div>
     </section>
-    <section id="thesis" aria-labelledby="thesis-title">
+    </div>
+    <div id="page-thesis" data-page>
+      <section id="thesis" aria-labelledby="thesis-title">
       <div class="eyebrow">Thesis supervision</div>
       <h2 id="thesis-title">Writing your master thesis with me</h2>
       <p>I supervise theses primarily within DigiBIM and IB&amp;M for topics close to my research and for students writing in English. These areas include topics related to international management, innovation, knowledge management, and sustainability. You generally need to  </p>
@@ -199,7 +218,9 @@
       <div class="sub-head">What I expect from you</div>
       <p style="font-size:0.92rem;color:var(--muted)">Capacity is limited — earlier inquiries have a better chance.</p>
     </section>
-    <section id="contact" aria-labelledby="contact-title">
+    </div>
+    <div id="page-contact" data-page>
+      <section id="contact" aria-labelledby="contact-title">
       <div class="eyebrow">Contact</div>
       <h2 id="contact-title">Get in touch</h2>
       <div class="contact-grid">
@@ -209,10 +230,53 @@
         <div class="contact-card"><h3>Elsewhere</h3><p><a href="https://www.linkedin.com/in/mwasserm/" target="_blank" rel="noopener">LinkedIn</a><br><a href="https://scholar.google.com/citations?user=rBzbALIAAAAJ&amp;hl=en" target="_blank" rel="noopener">Google Scholar</a><br></p></div>
       </div>
     </section>
+    </div>
   </main>
+
   <footer class="site">
     <p>© <span id="year">2026</span> Mike Wasserman · Münster School of Business, FH Münster</p>
   </footer>
-  <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+  
+  <script>
+    (function() {
+      var pages = ['home','teaching','research','programs','thesis','contact'];
+
+      function show(id) {
+        if (!pages.includes(id)) id = 'home';
+        pages.forEach(function(p) {
+          var el = document.getElementById('page-' + p);
+          if (el) el.classList.toggle('active', p === id);
+        });
+        document.querySelectorAll('.nav-link').forEach(function(a) {
+          a.classList.toggle('active', a.dataset.target === id);
+        });
+        window.scrollTo(0, 0);
+      }
+
+      function hashToPage(hash) {
+        var id = (hash || '').replace('#', '');
+        return pages.includes(id) ? id : 'home';
+      }
+
+      // Intercept all data-target links
+      document.addEventListener('click', function(e) {
+        var a = e.target.closest('[data-target]');
+        if (!a) return;
+        e.preventDefault();
+        var target = a.dataset.target;
+        history.pushState(null, '', target === 'home' ? '/' : '#' + target);
+        show(target);
+      });
+
+      // Handle back/forward
+      window.addEventListener('popstate', function() {
+        show(hashToPage(location.hash));
+      });
+
+      // On load, show correct page
+      show(hashToPage(location.hash));
+    })();
+  </script>
+  <script>document.querySelector('.footer-year') && (document.querySelector('.footer-year').textContent = new Date().getFullYear());</script>
 </body>
 </html>
