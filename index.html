@@ -76,6 +76,18 @@
     /* Home page shows hero + about stacked */
     #page-home{display:none;}
     #page-home.active{display:block;}
+  
+    .syllabus-toggle{margin-top:14px;border-top:1px solid var(--rule);padding-top:12px;}
+    .syllabus-toggle summary{cursor:pointer;font-size:0.84rem;font-weight:600;color:var(--accent);list-style:none;display:flex;align-items:center;gap:6px;user-select:none;}
+    .syllabus-toggle summary::-webkit-details-marker{display:none;}
+    .syllabus-toggle summary::before{content:'\25B6';font-size:0.65rem;transition:transform .2s ease;display:inline-block;}
+    .syllabus-toggle[open] summary::before{transform:rotate(90deg);}
+    .syllabus-toggle .syl-body{margin-top:12px;font-size:0.88rem;color:var(--ink-soft);}
+    .syllabus-toggle .syl-body h4{font-size:0.78rem;font-weight:700;letter-spacing:0.08em;text-transform:uppercase;color:var(--muted);margin:12px 0 4px;}
+    .syllabus-toggle .syl-body ul{margin:0 0 6px;padding-left:1.1em;}
+    .syllabus-toggle .syl-body li{margin:2px 0;}
+    .syllabus-grid{display:grid;grid-template-columns:auto 1fr;gap:4px 12px;font-size:0.86rem;margin:6px 0 10px;}
+    .syl-label{color:var(--muted);font-weight:600;white-space:nowrap;}.syl-val{color:var(--ink);}
   </style>
 </head>
 <body>
@@ -146,6 +158,36 @@
         <article class="card">
           <h3>Strategic Management + Social Business</h3>
           <div class="meta">IB&amp;M · Summer · Part of the Module Corporate Management for IB&M students</div>
+          <details class="syllabus-toggle">
+            <summary>Syllabus &amp; Schedule</summary>
+            <div class="syl-body">
+              <div class="syllabus-grid">
+                <span class="syl-label">Module</span><span class="syl-val">Corporate Management I (Unternehmensführung I)</span>
+                <span class="syl-label">Program</span><span class="syl-val">IB&amp;M · SoSe 2026</span>
+                <span class="syl-label">Time</span><span class="syl-val">Mon 10:15–11:45, Room D333</span>
+                <span class="syl-label">Co-instructor</span><span class="syl-val">Jost Wiethölter (Project Management)</span>
+              </div>
+              <h4>Assessment</h4>
+              <ul>
+                <li><strong>Presentation (20 pts)</strong> — 10-min team pitch: radical strategy idea for a listed company creating financial + social/environmental value</li>
+                <li><strong>Quizzes (30 pts)</strong> — Best 3 of 4 in-class quizzes (10 pts each); Apr 20, May 4, Jun 29 + 1 surprise</li>
+                <li><strong>Reflective Essay (10 pts)</strong> — 1–2 pages comparing your own research to a GenAI tool on the same topic; due Fri 17 Jul 17:00 ILIAS</li>
+              </ul>
+              <h4>Topic Schedule</h4>
+              <ul>
+                <li><strong>Mar 16</strong> — Introduction to Strategic Management &amp; Social Business</li>
+                <li><strong>Mar 23</strong> — Vision/Mission, Competitive Advantage, Stakeholder Theory</li>
+                <li><strong>Apr 13</strong> — Industry Analysis, Porter’s Five Forces, PESTEL</li>
+                <li><strong>Apr 20</strong> — Corporate Strategies: International &amp; Disruption · <em>Quiz 1</em></li>
+                <li><strong>Apr 27</strong> — Corporate Strategies: M&amp;A &amp; Vertical Integration</li>
+                <li><strong>May 4</strong> — Business Strategies: Cost Leadership, Differentiation, Niche · <em>Quiz 2</em></li>
+                <li><strong>May 11</strong> — Strategy Implementation: Triple Bottom Line, Reporting, Change</li>
+                <li><strong>May 18</strong> — Digitalization, AI &amp; Strategic Upheaval</li>
+                <li><strong>Jun 1–22</strong> — Team Presentations</li>
+                <li><strong>Jun 29</strong> — Wrap-up &amp; Q&amp;A · <em>Quiz 3</em></li>
+              </ul>
+            </div>
+          </details>
         </article>
       </div>
       <div class="sub-head">Both semesters</div>
